@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     void Start()
     {
+        Time.timeScale = 1f;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
         {
             Time.timeScale = 0f;
+            SceneManager.LoadScene("Credit");
         }
     }
 }
