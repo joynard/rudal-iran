@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6466897613149341130}
   - component: {fileID: 3981010581792046250}
   - component: {fileID: -4708979402282914864}
-  - component: {fileID: 3710643677215801003}
+  - component: {fileID: 2712468680774319320}
   m_Layer: 0
   m_Name: rudal
   m_TagString: Enemy
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8781068538162661793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
-  m_LocalPosition: {x: 11.49, y: -0.13, z: 0.2}
+  m_LocalPosition: {x: -5.4191494, y: -7.8705044, z: 0.2}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.057023477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
---- !u!114 &3710643677215801003
+--- !u!114 &2712468680774319320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386b4916245ad6242a102eb7a425b6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   target: {fileID: 0}
   moveSpeed: 20
   maxSpeed: 5

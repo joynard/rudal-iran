@@ -8,6 +8,7 @@ public class GeneratePowerUP : MonoBehaviour
     public float maxY = 4f;
 
     private float timer;
+    private bool changer = true;
 
     void Update()
     {
@@ -34,8 +35,6 @@ public class GeneratePowerUP : MonoBehaviour
                 return;
             }
         }
-
-        bool changer = true;
         if (changer == true)
         {
             powerPrefab = shieldPrefab;

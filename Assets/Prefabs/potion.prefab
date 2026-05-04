@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8300642464926933976}
   - component: {fileID: 8518000753276033527}
   - component: {fileID: 8843147886430625866}
-  - component: {fileID: 7747552372055285464}
+  - component: {fileID: 1078333059589375966}
+  - component: {fileID: 227006544529699098}
   m_Layer: 0
   m_Name: potion
   m_TagString: Potion
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1052212757536337535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.573447, y: -8.41582, z: 0}
+  m_LocalPosition: {x: -6.2915463, y: -8.892203, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -115,7 +116,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &8843147886430625866
 BoxCollider2D:
@@ -163,7 +164,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.04, y: 4.4}
   m_EdgeRadius: 0
---- !u!114 &7747552372055285464
+--- !u!114 &1078333059589375966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052212757536337535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f094a19b4f9df76438cf57534b64d532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &227006544529699098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
