@@ -28,7 +28,12 @@ public class Pathfinding : MonoBehaviour
             openList.Remove(currentNode);
             closedList.Add(currentNode);
 
-            if (currentNode == targetNode) return RetracePath(startNode, targetNode);
+            if (currentNode == targetNode)
+            {
+                List<GridNode> path = RetracePath(startNode, targetNode);
+                grid.finalPath = path; //visualisasinya biar muncul
+                return path;
+            }
 
             foreach (GridNode neighbor in grid.GetNeighboringNodes(currentNode))
             {
@@ -44,6 +49,7 @@ public class Pathfinding : MonoBehaviour
                 }
             }
         }
+        grid.finalPath = null; //reset kalo gada path
         return null;
     }
 
