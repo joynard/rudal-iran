@@ -43,17 +43,10 @@ Movement Path: Drone tidak bergerak lurus menabrak rintangan, melainkan bergerak
 
 - State [Confused]: Terjadi transisi ke state ini jika pemain mengambil item Confusion. Rudal akan mengubah perilakunya menjadi Wandering.
 
-# Instalasi & Cara Menjalankan
-
-1. Clone repository ini: git clone [URL_GITHUB_KAMU]
-2. Buka project menggunakan game engine (misal: Unity / Godot).
-3. Buka scene utama (misal: MainScene.unity).
-4. Tekan tombol Play untuk mencoba purwarupa game.
-
 # Credits & Assets
 
 - Semua asset visual dan audio yang digunakan dalam proyek ini bersifat free-to-use / royalty-free.
-- Player Sprite: [Sebutkan Sumber]
-- Missile & Drone Sprite: [Sebutkan Sumber]
-- Background & Environment: [Sebutkan Sumber]
-- Audio: [Sebutkan Sumber]
+- Player Sprite: 
+- Missile & Drone Sprite: 
+- Background & Environment: 
+- Audio: 
