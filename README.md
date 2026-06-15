@@ -9,8 +9,8 @@ Proyek ini dibuat untuk mata kuliah AI for Game at Ubaya Informatics
 - Kontrol Player: Gunakan tombol W, A, S, D untuk menggerakkan burung.
 - Tujuan: Hindari rintangan (pipa) dan musuh yang terus mengejar.
 - Power-Ups:
-  🛡️ Shield: Membuat rudal yang mendekat menjadi ketakutan dan berbalik arah.
-  🌀 Confusion (Signal Jammer): Mengacak sinyal rudal sehingga bergerak secara acak/kacau.
+  Shield: Membuat rudal yang mendekat menjadi ketakutan dan berbalik arah.
+  Confusion (Signal Jammer): Mengacak sinyal rudal sehingga bergerak secara acak/kacau.
 
 # Implementasi Artificial Intelligence (AI)
 
