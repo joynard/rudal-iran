@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Rudal : MonoBehaviour
 {
-    public enum MissileState { Seek, Flee, Wander }
+    public enum MissileState { Seek, Flee, Wander, Angry }
     //seek utk homing missile, flee utk terkena powerup shield, wander utk terkena powerup potion
     public MissileState currentState = MissileState.Seek;
 
@@ -49,6 +49,24 @@ public class Rudal : MonoBehaviour
                 WanderBehavior();
                 break;
         }
+
+        /*if (currentState == MissileState.Seek)
+        {
+            SeekBehavior();
+        }
+        else if (currentState == MissileState.Flee)
+        {
+            FleeBehavior();
+        }
+        else if (currentState == MissileState.Wander)
+        {
+            WanderBehavior();
+        }
+        else if (currentState == MissileState.Wander)
+        {
+            AngryBehavior();
+        }*/
+
     }
 
     public void ChangeState(MissileState newState)
@@ -92,6 +110,19 @@ public class Rudal : MonoBehaviour
         rb.AddForce(wanderDirection * moveSpeed);
         rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
     }
+
+    /*void AngryBehavior()
+    {
+        wanderTimer -= Time.fixedDeltaTime;
+        if (wanderTimer <= 0)
+        {
+            wanderDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+            wanderTimer = 1f;
+        }
+
+        rb.AddForce(wanderDirection * moveSpeed);
+        rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
+    }*/
 
     void OnCollisionEnter2D(Collision2D collision)
     {
