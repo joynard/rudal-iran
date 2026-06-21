@@ -20,7 +20,6 @@ public class GridBlock : MonoBehaviour
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
     }
 
-    // Karena pipa bergerak, kita perlu update grid secara berkala
     void Update()
     {
         CreateGrid();
