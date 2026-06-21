@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
+
+    public GameObject soundPrefab;
+    private float soundTimer;
     void Start()
     {
         Time.timeScale = 1f;
@@ -17,6 +20,23 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (movement != Vector2.zero)
+        {
+            if (soundTimer <= 0f)
+            {
+                Instantiate(soundPrefab, transform.position, Quaternion.identity);
+                soundTimer = 0.3f;
+            }
+            else
+            {
+                soundTimer -= Time.deltaTime;
+            }
+        }
+        else
+        {
+            soundTimer = 0f;
+        }
     }
     void FixedUpdate()
     {
