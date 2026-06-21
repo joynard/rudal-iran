@@ -13,7 +13,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        //transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += Vector3.left * speed * GameManager.instance.gameSpeedMultiplier * Time.deltaTime;
         if (transform.position.x < deadZone)
         {
             Destroy(gameObject);

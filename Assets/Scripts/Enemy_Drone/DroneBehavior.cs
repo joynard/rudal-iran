@@ -8,13 +8,21 @@ public class DroneAI : MonoBehaviour
     public float fastSpeed = 4f;
     public float slowSpeed = 2f;
     public float idleSpeed = 1f;
+    public float scrollSpeed = 3f;
+    
     public float patrolRange = 2f;
+    public float deadZone = -15f;
+
+    public ParticleSystem attackAura;
+    private bool isAttacking = false;
 
     private DroneSensor sensor;
     private SpriteRenderer spriteRenderer;
     private float startY;
     private bool movingUp = true;
 
+
+    
     void Start()
     {
         sensor = GetComponent<DroneSensor>();
@@ -33,6 +41,11 @@ public class DroneAI : MonoBehaviour
             Vector2 direction = (sensor.targetGO.position - transform.position).normalized;
             transform.right = -direction;
             transform.position += (Vector3)(direction * fastSpeed * Time.deltaTime);
+            if (!isAttacking && attackAura != null)
+            {
+                attackAura.Play();
+                isAttacking = true;
+            }
         }
         else if (canHear)
         {
@@ -40,17 +53,34 @@ public class DroneAI : MonoBehaviour
             Vector2 direction = (sensor.soundGO.position - transform.position).normalized;
             transform.right = -direction;
             transform.position += (Vector3)(direction * slowSpeed * Time.deltaTime);
+            if (!isAttacking && attackAura != null)
+            {
+                attackAura.Play();
+                isAttacking = true;
+            }
         }
         else
         {
             spriteRenderer.color = Color.white;
             transform.rotation = Quaternion.identity;
             IdlePatrol();
+
+            if (isAttacking && attackAura != null)
+            {
+                attackAura.Stop();
+                isAttacking = false;
+            }
+        }
+        if (transform.position.x < deadZone)
+        {
+            Destroy(gameObject);
         }
     }
 
     void IdlePatrol()
     {
+        Vector3 movement = Vector3.left * scrollSpeed * Time.deltaTime;
+
         if (movingUp)
         {
             transform.position += Vector3.up * idleSpeed * Time.deltaTime;
@@ -61,5 +91,6 @@ public class DroneAI : MonoBehaviour
             transform.position += Vector3.down * idleSpeed * Time.deltaTime;
             if (transform.position.y < startY - patrolRange) movingUp = true;
         }
+        transform.position += movement;
     }
 }

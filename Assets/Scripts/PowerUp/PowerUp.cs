@@ -21,6 +21,17 @@ public class PowerUpPlayer : MonoBehaviour
                     missile.ChangeState(Rudal.MissileState.Wander);
                 }
             }
+            if (gameObject.CompareTag("Destroyer"))
+            {
+                // Cari semua musuh yang punya script DroneAI di layar
+                DroneAI[] allDrones = FindObjectsByType<DroneAI>(FindObjectsSortMode.None);
+
+                // Hancurkan mereka semua satu per satu
+                foreach (DroneAI drone in allDrones)
+                {
+                    Destroy(drone.gameObject);
+                }
+            }
 
             Destroy(gameObject);
         }
@@ -28,7 +39,8 @@ public class PowerUpPlayer : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += Vector3.left * speed * GameManager.instance.gameSpeedMultiplier * Time.deltaTime;
+        //transform.position += Vector3.left * speed * Time.deltaTime;
         if (transform.position.x < deadZone)
         {
             Destroy(gameObject);
