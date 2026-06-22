@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  fastSpeed: 4
-  slowSpeed: 2
-  idleSpeed: 1
+  fastSpeed: 3
+  slowSpeed: 1
+  idleSpeed: 0.5
   scrollSpeed: 3
   patrolRange: 2
   deadZone: -15
