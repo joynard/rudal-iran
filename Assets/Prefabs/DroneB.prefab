@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcd1fb2502c75e42b94ffd6d271f4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 4
+  radius: 6
   angle: 360
   targetGO: {fileID: 0}
   soundGO: {fileID: 0}
