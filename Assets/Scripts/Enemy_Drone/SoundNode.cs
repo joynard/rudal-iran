@@ -4,6 +4,6 @@ public class SoundNode : MonoBehaviour
 {
     void Start()
     {
-        Destroy(gameObject, 0.3f);
+        Destroy(gameObject, 0.7f);
     }
 }

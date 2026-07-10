@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class GameManager : MonoBehaviour
     public float gameSpeedMultiplier = 1f;
     public float speedIncreaseRate = 0.01f;
 
+    public TextMeshProUGUI scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -21,7 +23,12 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        PlayerPrefs.SetInt("CurrentScore", 0);
+
+        if (scoreText != null)
+        {
+            scoreText.text = score.ToString();
+        }
     }
 
     // Update is called once per frame
@@ -34,5 +41,18 @@ public class GameManager : MonoBehaviour
     {
         score += amount;
         Debug.Log("Skor Saat Ini: " + score);
+
+        if (scoreText != null)
+        {
+            scoreText.text = "Score : " + score.ToString();
+        }
+
+        PlayerPrefs.SetInt("CurrentScore", score);
+
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
     }
 }

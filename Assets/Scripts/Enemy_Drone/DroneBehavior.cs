@@ -21,8 +21,8 @@ public class DroneAI : MonoBehaviour
     private float startY;
     private bool movingUp = true;
 
+    public AudioClip destroySound;
 
-    
     void Start()
     {
         sensor = GetComponent<DroneSensor>();
@@ -92,5 +92,13 @@ public class DroneAI : MonoBehaviour
             if (transform.position.y < startY - patrolRange) movingUp = true;
         }
         transform.position += movement;
+    }
+
+    private void OnDestroy()
+    {
+        if (destroySound != null)
+        {
+            AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position);
+        }
     }
 }

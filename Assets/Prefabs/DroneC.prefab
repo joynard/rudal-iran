@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.963792, y: -0.11081618, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,13 +132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  fastSpeed: 3
+  fastSpeed: 2
   slowSpeed: 1
   idleSpeed: 0.5
   scrollSpeed: 3
   patrolRange: 2
   deadZone: -15
-  attackAura: {fileID: 0}
+  attackAura: {fileID: 3929917672280329196, guid: 9394f516e5b86cf45a7bc3ba37f03b2b, type: 3}
+  destroySound: {fileID: 8300000, guid: 51c139b45729878468c385588755e8e2, type: 3}
 --- !u!61 &131098633837477195
 BoxCollider2D:
   m_ObjectHideFlags: 0

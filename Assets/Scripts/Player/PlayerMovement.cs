@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
             if (soundTimer <= 0f)
             {
                 Instantiate(soundPrefab, transform.position, Quaternion.identity);
-                soundTimer = 0.3f;
+                soundTimer = 1.0f;
             }
             else
             {
