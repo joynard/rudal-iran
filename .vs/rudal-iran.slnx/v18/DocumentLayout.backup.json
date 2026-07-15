@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\daven\\documents\\unity_project\\rudal-iran\\assets\\scripts\\menu\\tomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\tomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\daven\\documents\\unity_project\\rudal-iran\\assets\\scripts\\menu\\startgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\startgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\daven\\documents\\unity_project\\rudal-iran\\assets\\scripts\\enemy_rudal\\rudal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_rudal\\rudal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\daven\\documents\\unity_project\\rudal-iran\\assets\\scripts\\menu\\tomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\tomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\daven\\documents\\unity_project\\rudal-iran\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +70,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PowerUp.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\PowerUp\\PowerUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUp\\PowerUp.cs",
@@ -80,19 +84,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Rudal.cs",
+              "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Rudal\\Rudal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Rudal\\Rudal.cs",
+              "ToolTip": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Rudal\\Rudal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy_Rudal\\Rudal.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T07:40:42.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "startGame.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Menu\\startGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\startGame.cs",
               "ToolTip": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Menu\\startGame.cs",
               "RelativeToolTip": "Assets\\Scripts\\Menu\\startGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-10T06:52:58.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "toMenu.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Menu\\toMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\toMenu.cs",
@@ -100,12 +117,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Menu\\toMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:52:54.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T06:52:54.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "GameOver.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Managers\\GameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameOver.cs",
@@ -117,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
@@ -125,12 +141,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T06:32:11.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T06:32:11.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
@@ -142,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GenerateDroneDestroyer.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\PowerUp\\GenerateDroneDestroyer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUp\\GenerateDroneDestroyer.cs",
@@ -154,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GeneratePowerUp.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\PowerUp\\GeneratePowerUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUp\\GeneratePowerUp.cs",
@@ -166,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DroneDestroy.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\PowerUp\\DroneDestroy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUp\\DroneDestroy.cs",
@@ -178,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SensorEditor.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Drone\\SensorEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Drone\\SensorEditor.cs",
@@ -190,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SoundNode.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Drone\\SoundNode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Drone\\SoundNode.cs",
@@ -202,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DroneSpawner.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Drone\\DroneSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Drone\\DroneSpawner.cs",
@@ -214,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DroneBehavior.cs",
               "DocumentMoniker": "C:\\Users\\daven\\Documents\\unity_project\\rudal-iran\\Assets\\Scripts\\Enemy_Drone\\DroneBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Drone\\DroneBehavior.cs",

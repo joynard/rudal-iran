@@ -8,4 +8,8 @@ public class startGame : MonoBehaviour
     {
         SceneManager.LoadScene("Level2");
     }
+    public void Play1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
 }
